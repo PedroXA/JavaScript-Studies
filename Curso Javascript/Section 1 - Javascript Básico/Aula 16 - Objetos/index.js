@@ -2,11 +2,9 @@ const array = [1,2,3];
 // é possível alterar valores de um array mesmo sendo const mas só alterando o conteúdo dentro || array.push || array.pop || array[0] = 'Alguma coisa' || a regra é só não reatribuir
 
 const pessoa = { // Objeto: {} || array: []
-    /* 
     nome: [],
     sobrenome: [],
     idade: [] 
-    */
 }// este é um objeto literal
 
 
@@ -19,11 +17,6 @@ function criarPessoa(nome, sobrenome, idade){
             nome,
             sobrenome,
             idade
-           /*  
-            nome: nome,
-            sobrenome: sobrenome,
-            idade: idade 
-            */
         };
 } // Função factory
 
@@ -37,7 +30,11 @@ const pessoa2 = { // Objeto: {} || array: []
     idade: 18,
     
     fala(){ // É possível criar funções dentro de objetos
-        console.log(`${this.nome} ${this.sobrenome} está falando Oi`)
+        console.log(`${this.nome} ${this.sobrenome} está falando Oi`);
+    },
+
+    incrementalIdade(){
+        this.idade++;
     }
 }
 
