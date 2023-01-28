@@ -38,4 +38,6 @@ const pessoa2 = { // Objeto: {} || array: []
     }
 }
 
+
+
 /* pessoa2.fala(); */
