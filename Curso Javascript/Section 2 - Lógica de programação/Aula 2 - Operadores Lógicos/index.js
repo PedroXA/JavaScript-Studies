@@ -4,3 +4,7 @@ Operadores lógicos
 || -> OR
 ! -> NOT 
  */
+
+/* console.log(!!true) */
+
+

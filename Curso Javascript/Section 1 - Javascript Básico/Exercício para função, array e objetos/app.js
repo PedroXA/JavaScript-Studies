@@ -1,5 +1,5 @@
 function cadastrarPessoas() {
-    const form = document.querySelector('.form')
+    const form = document.querySelector('.form');
     const painel = document.getElementById('painel');
     var pessoa = [];
     
@@ -12,7 +12,6 @@ function cadastrarPessoas() {
         const peso = form.querySelector('.weight').value;
         const altura = form.querySelector('.altura').value;
 
-        
         /* pessoa.push(
             nome, 
             sobrenome,
@@ -32,8 +31,6 @@ function cadastrarPessoas() {
         /* painel.innerHTML += `${pessoa}`;     || MINHA RESOLUÇÃO  || erros: manipulação das informações foram totalmente erradas   */
         painel.innerHTML += `<p>${nome}  ${sobrenome}  ${peso}  ${altura} <br></p>`;
     }
-    
-   
     form.addEventListener('submit', recebendoForm);
 
 }
