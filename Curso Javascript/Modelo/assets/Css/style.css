@@ -1,0 +1,74 @@
+/* ==== PRESETS ==== */
+
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400&family=Urbanist:ital,wght@0,400;1,400&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Urbanist', sans-serif;
+    box-sizing: border-box;
+}
+
+input:focus{
+    outline: none;
+}
+
+body{
+    width: 100%;
+    background-color: #612F74;
+}
+
+/* ==== FORM ==== */
+form{
+    border-radius: 16px;
+    padding: 8vh;
+    background-color: #FAFAFA;
+}
+
+form input{
+    padding: 2%;
+    margin: 1%;
+    width: 40vw;
+    height: 4.5vh;
+    border-radius: 7px;
+    border-width: 1px;
+}
+
+/* ==== BUTTON ==== */
+#form__button{
+    align-items: center;
+    padding: 10px 25px 10px 25px;
+}
+
+#form__button{
+    border-radius: 7px;
+    border-width: 0px;
+    background-color: rgb(65, 248, 65);
+}
+
+#form--btn__display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button:hover{
+    background-color: #612F74;
+    color: white;
+    
+}
+
+/* ==== FORM ==== */
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.formulario form>div{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
