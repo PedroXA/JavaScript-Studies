@@ -2,7 +2,7 @@
 
 const form = document.querySelector(".form");
 const log = document.querySelector(".log"); // Mensagem com os dados do usuário
-
+const state = document.querySelector(".form__stateType");
 
 form.addEventListener("submit", function (e) {
   e.preventDefault();
@@ -26,7 +26,7 @@ form.addEventListener("submit", function (e) {
   const imc = getIMC(peso, altura);
   const nivelImc = getNivelImc(imc);
 
-    log.innerHTML = `Olá, seu IMC é ${imc.toFixed()}`;
+    log.innerHTML = `Olá, seu IMC é ${imc}`;
     state.innerHTML = nivelImc;
 });
 
