@@ -65,6 +65,7 @@ button:hover{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    flex-direction: column;
 }
 
 .formulario form>div{
@@ -73,9 +74,6 @@ button:hover{
     justify-content: center;
     flex-direction: column;
 }
-
-
-
 
 .form--ul__info ul li{
     display: flex;
