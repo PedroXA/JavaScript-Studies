@@ -26,8 +26,8 @@ form.addEventListener("submit", function (e) {
   const imc = getIMC(peso, altura);
   const nivelImc = getNivelImc(imc);
 
-    log.innerHTML = `Olá, seu IMC é ${imc.toFixed()}`;
-    state.innerHTML = nivelImc;
+    log.innerHTML = `Olá, seu IMC é ${imc}`;
+    state.innerHTML = setResultado(nivelImc);
 });
 
 function getIMC(peso, altura) {
@@ -36,16 +36,9 @@ function getIMC(peso, altura) {
   return result.toFixed(2);
 }
 
-function criaP(){
-    const p = document.createElement('p');
-    return p;
-}
-
 function setResultado(msg){
-    /* const state = document.querySelector(".form__stateType"); */
-    state.innerHTML = '';
-
-    const p = criaP();
+    const state = document.querySelector(".form__stateType"); 
+     state.innerHTML = msg; 
 }
 
 function getNivelImc(imc) {
