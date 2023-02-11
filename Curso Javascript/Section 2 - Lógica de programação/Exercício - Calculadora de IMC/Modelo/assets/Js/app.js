@@ -2,7 +2,7 @@
 
 const form = document.querySelector(".form");
 const log = document.querySelector(".log"); // Mensagem com os dados do usuário
-const state = document.querySelector(".form__stateType");const state = document.querySelector(".form__stateType");
+const state = document.querySelector(".form__stateType");
 
 form.addEventListener("submit", function (e) {
   e.preventDefault();
