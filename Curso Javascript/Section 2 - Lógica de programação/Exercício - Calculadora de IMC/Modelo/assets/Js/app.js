@@ -2,7 +2,6 @@
 
 const form = document.querySelector(".form");
 const log = document.querySelector(".log"); // Mensagem com os dados do usuário
-const state = document.querySelector(".form__stateType");
 
 form.addEventListener("submit", function (e) {
   e.preventDefault();
@@ -23,11 +22,12 @@ form.addEventListener("submit", function (e) {
     return;
   }
 
-  const imc = getIMC(peso, altura);
-  const nivelImc = getNivelImc(imc);
+    const imc = getIMC(peso, altura);
+    const nivelImc = getNivelImc(imc);
 
+    setResultado(nivelImc)
     log.innerHTML = `Olá, seu IMC é ${imc}`;
-    state.innerHTML = setResultado(nivelImc);
+    
 });
 
 function getIMC(peso, altura) {
@@ -38,7 +38,25 @@ function getIMC(peso, altura) {
 
 function setResultado(msg){
     const state = document.querySelector(".form__stateType"); 
-     state.innerHTML = msg; 
+    state.innerHTML = ''; 
+
+    const p = criaP();
+
+     p.innerHTML = msg;
+     state.appendChild(p);
+}
+
+function corResultado(msg, imc){
+  if(msg == imc.type[0]){
+    p.classList.add('resultado-paragrafo__abaixoPeso');
+  } else if(msg == imc.type[1]){
+    p.classList.add('resultado-paragrafo__abaixoPeso');
+  }
+}
+
+function criaP(){
+  const p = document.createElement('p');
+  return p;
 }
 
 function getNivelImc(imc) {

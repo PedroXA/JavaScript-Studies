@@ -2,3 +2,17 @@
     display: flex;
     margin: 3vh;
 }
+
+.resultado-paragrafo__abaixoPeso{
+    background-color: yellow;
+    padding: 5%;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.resultado-paragrafo__pesoNormal{
+    background-color: green;
+    padding: 5%;
+    text-align: center;
+    border-radius: 12px;
+}
