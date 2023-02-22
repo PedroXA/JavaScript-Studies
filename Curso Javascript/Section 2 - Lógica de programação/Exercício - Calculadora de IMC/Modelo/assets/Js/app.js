@@ -3,6 +3,15 @@
 const form = document.querySelector(".form");
 const log = document.querySelector(".log"); // Mensagem com os dados do usuário
 
+const tipo = {
+  abaixoPeso: "Abaixo do peso",
+  pesoNormal: "Peso normal",
+  sobrePeso: "Sobrepeso",
+  obesidade1: "Obesidade grau 1",
+  obesidade2: "Obesidade grau 2",
+  obesidade2: "Obesidade grau 3"
+ }
+
 form.addEventListener("submit", function (e) {
   e.preventDefault();
 
@@ -25,7 +34,7 @@ form.addEventListener("submit", function (e) {
     const imc = getIMC(peso, altura);
     const nivelImc = getNivelImc(imc);
 
-    setResultado(nivelImc)
+    setResultado(nivelImc);
     log.innerHTML = `Olá, seu IMC é ${imc}`;
     
 });
@@ -38,20 +47,25 @@ function getIMC(peso, altura) {
 
 function setResultado(msg){
     const state = document.querySelector(".form__stateType"); 
+
     state.innerHTML = ''; 
 
     const p = criaP();
 
      p.innerHTML = msg;
      state.appendChild(p);
-}
-
-function corResultado(msg, imc){
-  if(msg == imc.type[0]){
-    p.classList.add('resultado-paragrafo__abaixoPeso');
-  } else if(msg == imc.type[1]){
-    p.classList.add('resultado-paragrafo__abaixoPeso');
-  }
+     
+     if(msg == tipo[Object.keys(tipo)[0]]){
+      p.classList.add('resultado-paragrafo__abaixoPeso');
+    } else if(msg == tipo[Object.keys(tipo)[1]]){
+      p.classList.add('resultado-paragrafo__pesoNormal');
+    }
+    else if(msg == tipo[Object.keys(tipo)[2]]){
+      p.classList.add('resultado-paragrafo__sobrepeso')
+    }
+    else{
+      p.classList.add('resultado-paragrafo__obesidade')
+    }
 }
 
 function criaP(){
@@ -61,70 +75,19 @@ function criaP(){
 
 function getNivelImc(imc) {
   // Function para ver qual nível a pessoa está
-  const type = [
-    "Abaixo do peso",
-    "Peso normal",
-    "Sobrepeso",
-    "Obesidade grau 1",
-    "Obesidade grau 2",
-    "Obesidade grau 3",
-  ];
 
   if (imc <= 18.5) {
-    return type[0];
+    return tipo[Object.keys(tipo)[0]];
   } else if (imc > 18.5 && imc <= 24.9) {
-    return type[1];
+    return tipo[Object.keys(tipo)[1]];
   } else if (imc >= 25 && imc <= 29.9) {
-    return type[2];
+    return tipo[Object.keys(tipo)[2]];
   } else if (imc >= 30 && imc <= 34.9) {
-    return type[3];
+    return tipo[Object.keys(tipo)[3]];
   } else if (imc >= 35 && imc <= 40) {
-    return type[4];
+    return tipo[Object.keys(tipo)[4]];
   } else {
-    return type[5];
+    return tipo[Object.keys(tipo)[5]];
   }
 }
 
-
-
-
-
-
-
-
-/* if(result <= 18.5)
-{
-    
-    log.innerHTML += `Olá ${nome}, seu peso é de ${peso} kg com a altura de ${altura}, seu IMC é ${result.toFixed()}`
-    stateTypeImc.innerHTML = `<h2>Magresa 🦴</h2>`
-} 
-else if(result > 18.5 && result <= 24.9)
-{
-    
-    log.innerHTML += `Olá ${nome}, seu peso é de ${peso} kg com a altura de ${altura}, seu IMC é ${result.toFixed()}`
-    stateTypeImc.innerHTML = `<h2>Peso Normal 💪</h2>`
-} 
-else if (result >= 25 && result <= 29.9)
-{
-    
-    log.innerHTML += `Olá ${nome}, seu peso é de ${peso} kg com a altura de ${altura}, seu IMC é ${result.toFixed()}`
-    stateTypeImc.innerHTML = `<h2>Sobrepeso 🍖</h2>` 
-}
-else if(result >= 30 && result <= 34.9){
-    
-    log.innerHTML += `Olá ${nome}, seu peso é de ${peso} kg com a altura de ${altura}, seu IMC é ${result.toFixed()}`
-    stateTypeImc.innerHTML = `<h2>Obesidade Grau 1 💊</h2>`
-    
-} 
-else if(result >= 35 && result <= 40){
-    stateTypeImc.innerHTML = ``
-    log.innerHTML += `Olá ${nome}, seu peso é de ${peso} kg com a altura de ${altura}, seu IMC é ${result.toFixed()}`
-    stateTypeImc.innerHTML = `<h2>Obesidade Grau 2 💊💊</h2>`
-}else{
-    stateTypeImc.innerHTML = ``
-    log.innerHTML += `Olá ${nome}, seu peso é de ${peso} kg com a altura de ${altura}, seu IMC é ${result.toFixed()}`
-    stateTypeImc.innerHTML = `<h2>Obesidade Grau 3 💊💊💊</h2>`
-}
-} */
-/*     calculateFunction(); */
-/* form.addEventListener('submit', recieveData); */

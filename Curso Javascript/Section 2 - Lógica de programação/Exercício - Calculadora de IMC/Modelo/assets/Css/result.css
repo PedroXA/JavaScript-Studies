@@ -4,6 +4,10 @@
 }
 
 .resultado-paragrafo__abaixoPeso{
+    display: flex;
+    align-items: center;
+
+    
     background-color: yellow;
     padding: 5%;
     text-align: center;
@@ -11,7 +15,33 @@
 }
 
 .resultado-paragrafo__pesoNormal{
+    display: flex;
+    align-items: center;
+
+
     background-color: green;
+    padding: 5%;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.resultado-paragrafo__sobrepeso{
+    display: flex;
+    align-items: center;
+
+
+    background-color: rgb(156, 156, 3);
+    padding: 5%;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.resultado-paragrafo__obesidade{
+    display: flex;
+    align-items: center;
+
+
+    background-color: red;
     padding: 5%;
     text-align: center;
     border-radius: 12px;

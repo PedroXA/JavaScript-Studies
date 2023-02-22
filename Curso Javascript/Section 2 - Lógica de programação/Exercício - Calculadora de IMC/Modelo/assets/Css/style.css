@@ -22,7 +22,7 @@ body{
 /* ==== FORM ==== */
 form{
     border-radius: 16px;
-    padding: 8vh;
+    padding: 2%;
     background-color: #FAFAFA;
 }
 
@@ -70,7 +70,7 @@ button:hover{
 
 .formulario form>div{
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
 }
@@ -80,4 +80,6 @@ button:hover{
     flex-direction: row;
 }
 
-
+.form__stateType{
+    padding: 5%;
+}

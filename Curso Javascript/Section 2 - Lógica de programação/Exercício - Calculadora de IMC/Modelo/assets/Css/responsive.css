@@ -1,0 +1,45 @@
+/* Para telas menores que 768px */
+@media only screen and (max-width: 768px) {
+
+    /* Reduzir o tamanho da fonte dos rótulos */
+    label {
+      font-size: 14px;
+    }
+  
+    /* Reduzir o tamanho da fonte dos campos de entrada */
+    input[type="text"],
+    input[type="number"],
+    textarea {
+      font-size: 14px;
+    }
+  
+    /* Alinhar os campos de entrada à esquerda */
+    input[type="text"],
+    input[type="number"],
+    textarea {
+      width: 100%;
+      margin: 10px 0;
+    }
+  
+    /* Ajustar o tamanho do botão Enviar */
+    #form__button {
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+  
+  /* Para telas maiores que 768px */
+  @media only screen and (min-width: 769px) {
+  
+    /* Ajustar a largura dos campos de entrada */
+    .formulario input[type="text"],
+    .formulario input[type="number"] {
+      width: 100%;
+      margin: 10px 10px 10px 0;
+    }
+  
+    /* Ajustar a largura do botão Enviar */
+    #form__button {
+      width: 100px;
+    }
+  }
