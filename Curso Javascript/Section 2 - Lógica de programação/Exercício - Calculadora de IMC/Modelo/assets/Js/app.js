@@ -9,8 +9,8 @@ const tipo = {
   sobrePeso: "Sobrepeso",
   obesidade1: "Obesidade grau 1",
   obesidade2: "Obesidade grau 2",
-  obesidade2: "Obesidade grau 3"
- }
+  obesidade2: "Obesidade grau 3",
+};
 
 form.addEventListener("submit", function (e) {
   e.preventDefault();
@@ -31,12 +31,11 @@ form.addEventListener("submit", function (e) {
     return;
   }
 
-    const imc = getIMC(peso, altura);
-    const nivelImc = getNivelImc(imc);
+  const imc = getIMC(peso, altura);
+  const nivelImc = getNivelImc(imc);
 
-    setResultado(nivelImc);
-    log.innerHTML = `Olá, seu IMC é ${imc}`;
-    
+  setResultado(nivelImc);
+  log.innerHTML = `Olá, seu IMC é ${imc}`;
 });
 
 function getIMC(peso, altura) {
@@ -45,31 +44,29 @@ function getIMC(peso, altura) {
   return result.toFixed(2);
 }
 
-function setResultado(msg){
-    const state = document.querySelector(".form__stateType"); 
+function setResultado(msg) {
+  const state = document.querySelector(".form__stateType");
 
-    state.innerHTML = ''; 
+  state.innerHTML = "";
 
-    const p = criaP();
+  const p = criaP();
 
-     p.innerHTML = msg;
-     state.appendChild(p);
-     
-     if(msg == tipo[Object.keys(tipo)[0]]){
-      p.classList.add('resultado-paragrafo__abaixoPeso');
-    } else if(msg == tipo[Object.keys(tipo)[1]]){
-      p.classList.add('resultado-paragrafo__pesoNormal');
-    }
-    else if(msg == tipo[Object.keys(tipo)[2]]){
-      p.classList.add('resultado-paragrafo__sobrepeso')
-    }
-    else{
-      p.classList.add('resultado-paragrafo__obesidade')
-    }
+  p.innerHTML = msg;
+  state.appendChild(p);
+
+  if (msg == tipo[Object.keys(tipo)[0]]) {
+    p.classList.add("resultado-paragrafo__abaixoPeso");
+  } else if (msg == tipo[Object.keys(tipo)[1]]) {
+    p.classList.add("resultado-paragrafo__pesoNormal");
+  } else if (msg == tipo[Object.keys(tipo)[2]]) {
+    p.classList.add("resultado-paragrafo__sobrepeso");
+  } else {
+    p.classList.add("resultado-paragrafo__obesidade");
+  }
 }
 
-function criaP(){
-  const p = document.createElement('p');
+function criaP() {
+  const p = document.createElement("p");
   return p;
 }
 
@@ -90,4 +87,3 @@ function getNivelImc(imc) {
     return tipo[Object.keys(tipo)[5]];
   }
 }
-
