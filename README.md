@@ -2,7 +2,7 @@
 # Repositório do Curso de JavaScript
 Bem-vindo ao repositório do curso abrangente de JavaScript! Este é um projeto em constante desenvolvimento, criado para aprimorar habilidades em JavaScript, desde os fundamentos até tópicos avançados e práticos.
 
-![IMGJavaScript](https://www.google.com/url?sa=i&url=https%3A%2F%2Fmedium.com%2F%40lucasdevfs%2Fo-que-%25C3%25A9-javascript-e0083a2f4cc7&psig=AOvVaw3BRNCCnVg4c92pghcvyHtt&ust=1701111187128000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOirxv6q4oIDFQAAAAAdAAAAABAR)
+![IMGJavaScript]("https://www.google.com/url?sa=i&url=https%3A%2F%2Fmedium.com%2F%40lucasdevfs%2Fo-que-%25C3%25A9-javascript-e0083a2f4cc7&psig=AOvVaw3BRNCCnVg4c92pghcvyHtt&ust=1701111187128000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOirxv6q4oIDFQAAAAAdAAAAABAR")
 
 ## Fundamentos
 Começamos explorando os fundamentos do JavaScript, destacando o uso de recursos nativos sem depender de frameworks ou bibliotecas adicionais. Este módulo abrange tanto o desenvolvimento no lado do servidor, utilizando o Node.js, quanto no lado do cliente, trabalhando diretamente nos navegadores.
