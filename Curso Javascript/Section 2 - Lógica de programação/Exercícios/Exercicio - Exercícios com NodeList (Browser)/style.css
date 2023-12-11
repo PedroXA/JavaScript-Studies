@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400&family=Urbanist:ital,wght@0,400;1,400&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Urbanist', sans-serif;
+    box-sizing: border-box;
+}
+
+input:focus{
+    outline: none;
+}
+
+body{
+    width: 100%;
+    background-color: #612F74;
+}
+
+div{
+    border-radius: 12px;
+    background-color: #FAFAFA;
+    margin: 5% 30% 5% 30%;
+    height: 15vh;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+div p {
+    margin-top: 1%;
+}
+
+h1{
+    text-align: center;
+}
