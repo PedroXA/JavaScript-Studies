@@ -24,7 +24,7 @@ function formataData(data){
     const mes = zeroAEsquerda(data.getMonth() + 1);
     const ano = zeroAEsquerda(data.getFullYear());
 
-    return `${dia}/${mes}/${ano}`;
+    return `${dia}:${mes}:${ano}`;
 }
 
 const data = new Date();
