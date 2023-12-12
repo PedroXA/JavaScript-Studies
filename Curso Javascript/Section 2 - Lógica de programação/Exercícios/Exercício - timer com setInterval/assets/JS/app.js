@@ -36,14 +36,17 @@ const btnPausar    = document.querySelector('.btn-parar');
 const btnResetar   = document.querySelector('.btn-limpar');
 
 btnIniciar.addEventListener('click', function(event){
+    clearInterval(timer);
     iniciarTimer();
 });
 
 btnPausar.addEventListener('click', function(){
+    clearInterval(timer);
     pararTimer();
 })
 
 btnResetar.addEventListener('click', function(event){
+    clearInterval(timer);
     zerarTimer();
 })
 
