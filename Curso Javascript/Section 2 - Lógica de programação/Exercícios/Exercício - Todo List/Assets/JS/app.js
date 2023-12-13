@@ -53,14 +53,20 @@ function saveTasks(){
 }
 
 function addSavedTask(){
-    const task = localStorage.getItem('tasks'); // Pega as informações salvas no LocalStorage
-    const taskList = JSON.parse(task);          // Converte do JSON para String
-
-    for (let task of taskList){
-        createTask(task);
+    try{
+        const task = localStorage.getItem('tasks'); // Pega as informações salvas no LocalStorage
+        const taskList = JSON.parse(task);          // Converte do JSON para String
+    
+        for (let task of taskList){
+            createTask(task);
+        }
+    }catch(error){
+        console.log("Sem instância de armazenamento no LocalStorage - Criando uma...");
     }
+   
 }
 addSavedTask();
+
 
 btnAddToDo.addEventListener('click', function(e){
    if (!taskInput.value) return;
