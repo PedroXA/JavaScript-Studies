@@ -2,8 +2,6 @@
 # Repositório do Curso de JavaScript
 Bem-vindo ao repositório do curso abrangente de JavaScript! Este é um projeto em constante desenvolvimento, criado para aprimorar habilidades em JavaScript, desde os fundamentos até tópicos avançados e práticos.
 
-![Imagem](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.treinaweb.com.br%2Fblog%2Fo-que-se-pode-fazer-com-javascript-hoje-em-dia&psig=AOvVaw0K9UApr_KT1OzGToOO7N3X&ust=1701111311138000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCICH77mr4oIDFQAAAAAdAAAAABAE)
-
 ## Fundamentos
 Começamos explorando os fundamentos do JavaScript, destacando o uso de recursos nativos sem depender de frameworks ou bibliotecas adicionais. Este módulo abrange tanto o desenvolvimento no lado do servidor, utilizando o Node.js, quanto no lado do cliente, trabalhando diretamente nos navegadores.
 
