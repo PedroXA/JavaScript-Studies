@@ -48,7 +48,7 @@ function saveTasks(){
         taskList.push(taskText);
     }
 
-    const taskJson = JSON.stringify(taskList);  // Passa os valores para JSON
+    const taskJson = JSON.stringify(taskList);  // Passa os valores em javascript para JSON
     localStorage.setItem('tasks', taskJson);    // Armazena o valor JSON no LocalStorage do Browser
 }
 
