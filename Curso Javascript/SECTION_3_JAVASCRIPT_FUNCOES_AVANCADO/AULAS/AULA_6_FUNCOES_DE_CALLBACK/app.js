@@ -1,10 +1,11 @@
-// Funções de callback - São funções que 
+// Funções de callback
+// Callback é, basicamente, 
+// um tipo de função que é passada como um argumento de outra função e só é executada após o processamento da função que a chamou. 
 
 function rand(min = 1000, max = 5000){
     const num = Math.random() * (max - min) + min;
     return Math.floor(num)
 }
-
 
 function f1(callback){
     setTimeout(function() {
