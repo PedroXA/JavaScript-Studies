@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    background-color:#707070;
+}
+
+.calculadora td{
+    height: 3vh;
+}
+
+.calculadora input{
+    width: 100%;
+    height: 7vh;
+    text-align: end;
+}
+
+.calculadora button{
+    padding: 20%;
+    width: 6vw;
+    text-align: center;
+}
+
+button{
+    cursor: pointer;
+}
+
+button:hover{
+    color: white;
+    background-color: rgb(58, 58, 58);
+}
