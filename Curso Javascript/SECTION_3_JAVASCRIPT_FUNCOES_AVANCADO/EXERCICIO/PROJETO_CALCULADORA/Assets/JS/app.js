@@ -70,5 +70,3 @@ function createAPP(){
 
 const app = createAPP();
 app.start();
-
-disp
