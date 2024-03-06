@@ -17,8 +17,6 @@ function* geradora2(){
     }
 }
 
-
-
 g2 = geradora2()
 
 /* RODAR ISSO PODE SER PERIGOSO
