@@ -9,7 +9,6 @@ delete nome[1];
 // delete -> vai deletar a informação porém não muda o indice dos elementos.
 // console.log(nome)
 
-
 // const animais = new Array('Macaco','Ovelha', 'Tubarão') // forma menos usada de criar um array
 
 // const nome2 = ['Pedro', 'Nina', 'Lucas']
@@ -17,6 +16,6 @@ delete nome[1];
 
 // console.log(nome3)
 
-const nome = 'Pedro Henrique Dos Reis';
-const nomes = nome.split(' '); // transformando minha string em um array separando ela por espaços
+const nome = "Pedro Henrique Dos Reis";
+const nomes = nome.split(" "); // transformando minha string em um array separando ela por espaços
 console.log(nomes);

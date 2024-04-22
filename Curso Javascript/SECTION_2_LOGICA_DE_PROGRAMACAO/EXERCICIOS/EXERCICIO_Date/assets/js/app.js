@@ -1,4 +1,4 @@
- /* const data = new Date();
+/* const data = new Date();
 let nomeDoDia = pegarNomeDia(data.getDay())
 let nomeDoMes = pegarNomeMes(data.getMonth() + 1);
 
@@ -81,22 +81,15 @@ function exibirResultado(){
     output.appendChild(h1);
 }
 exibirResultado(); 
- */let cont = 1;
+ */ let cont = 1;
 
-    for (let index = 10; index > cont; index--) {
-   
-        const h1 = document.querySelector(".data-container h1");
-        const data = new Date();
-        const opcoes = {
-            dateStyle: 'full',
-            timeStyle: 'short'
-        };
-        
-  
-        h1.innerHTML = data.toLocaleString('pt-BR', opcoes); 
-        
-    }
-    
- 
+for (let index = 10; index > cont; index--) {
+  const h1 = document.querySelector(".data-container h1");
+  const data = new Date();
+  const opcoes = {
+    dateStyle: "full",
+    timeStyle: "short",
+  };
 
-
+  h1.innerHTML = data.toLocaleString("pt-BR", opcoes);
+}
