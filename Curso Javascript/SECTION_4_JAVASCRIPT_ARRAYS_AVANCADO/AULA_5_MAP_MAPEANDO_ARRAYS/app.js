@@ -3,7 +3,7 @@ const numeros = [5, 50, 80, 1, 2, 3, 4, 5, 6, 8, 11, 15, 22, 27];
 const numerosDobrados = numeros.map(function (valor) {
   return valor * 2;
 });
-/* console.log(numerosDobrados); */
+console.log(numerosDobrados);
 
 // Para cada elemento.
 // Retorne apenas uma string com o nome da pessoa
