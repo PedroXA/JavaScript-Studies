@@ -73,7 +73,7 @@
 // });
 
 // if (cpfString == simplifiedCpf) {
-// 	console.log("CPF válido");
+// 	console.log("CPF válido");S
 // } else {
 // 	console.log("CPF inválido");
 // }
