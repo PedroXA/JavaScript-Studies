@@ -26,11 +26,11 @@
   * Factory Functions ✅
   * Constructor Functions ✅
   * Recursive Functions ✅
-  * ---
+  * 
 
 ### Module 4 - JavaScript Arrays 
   * Splice method✅
-  * ---
+  * 
   * Filter method ✅
   * Map method ✅
   * Reduce method ✅
