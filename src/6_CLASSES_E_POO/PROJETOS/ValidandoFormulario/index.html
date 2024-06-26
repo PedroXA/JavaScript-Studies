@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <title>Validando Formulário</title>
+  </head>
+  <body>
+    <form action="/" method="POST" class="form">
+      <label for="Nome">Nome</label>
+      <input 
+      type="text" 
+      class="form-input nome checkInput" 
+      />
+      <label for="Email">E-mail</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-input email checkInput"
+      />
+      <label for="cpf">CPF</label>
+      <input type="text" class="form-input cpf checkInput" />
+      <label for="Senha">Senha</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        class="form-input senha checkInput"
+      />
+      <label for="Senha" class="form-label">Repita a Senha</label>
+      <input
+        type="password"
+        name="password2"
+        id="password2"
+        class="form-input repetir-senha checkInput"
+      />
+      <button type="submit" class="form-button">Cadastrar</button>
+    </form>
+    
+    <script src="./assets/app.js"></script>
+    <script src="./assets/validaCPF.js"></script>
+    
+  </body>
+</html>
