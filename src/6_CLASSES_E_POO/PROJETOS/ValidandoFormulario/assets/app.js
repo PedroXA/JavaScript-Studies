@@ -1,7 +1,3 @@
-// user só pode ter letras e/ou números
-// usuário deverá ter entre 3 e 12 caracteres
-// senha precisa ter entre 3 e 12 caracteres
-
 class form {
   constructor() {
     this.form = document.querySelector(".form");
@@ -16,7 +12,11 @@ class form {
 
   handleSubmit(e) {
     e.preventDefault();
-    this.validatingInputs();
+
+    if(this.validatingInputs()){
+      alert("Formulário enviado");
+      this.form.submit();
+    }
   }
 
   validatingInputs() {
@@ -31,16 +31,19 @@ class form {
         this.createError(input, `Campo ${label} não pode estar em branco`);
         valid = false;
       }
-      // Mandando uma solicitação para ver se o campo Nome é
+      // Mandando uma solicitação para ver se o campo Nome é válido
       if (input.classList.contains("nome")){
-        // console.log(input);
         if(!this.isUserValid(input)) valid = false;
        } 
 
       // Mandando uma solicitação para ver se o campo Cpf é válido
       if (input.classList.contains("cpf")) {
-        // console.log(input);
         if (!this.isCpfValid(input)) valid = false; 
+      }
+
+      // Mandando uma solicitação para ver se o campo Senha é válido
+      if (input.classList.contains("senha")){
+        if(!this.isPasswordValid(input)) valid = false;
       }
     }
      return valid;
@@ -48,20 +51,40 @@ class form {
 
   isUserValid(input) {
     const name = input.value;
-    let valid = true;
-    // console.log(name.length);
+    let onlyLettersAndNumbersRegex = /^[a-zA-Z0-9]+$/;
+
     if(name.length < 3 || name.length > 12){
-        console.log(name);
-        this.createError(input, `O nome deve ter de 3 até 12 caracteres!`)
-        valid = false;
+        this.createError(input, `O nome deve ter de 3 até 12 caracteres!`);
+        return false;
     }
-    // if(input.value.lenght < 3 || input.value.lenght > 12){
-    //     console.log(input.value);
-    //     this.createError(input, `O nome deve ter de 3 até 12 caracteres!`)
-    //     return false;
-    // }
+
+    if(!onlyLettersAndNumbersRegex.test(name)){
+      this.createError(input, 'O nome deve conter somente letras e números');
+      return false;
+    }
+
+    return true;
+  }
+
+  isPasswordValid(passwordInput) {
+    const password = passwordInput.value;
+    const secondPassword = this.form.querySelector(".repetir-senha").value;
+    let valid = true;
+  
+    if (password.length < 3 || password.length > 12) {
+      valid = false;
+      this.createError(passwordInput, 'A senha deve conter entre 3 e 12 caracteres');
+    }
+  
+    if (password !== secondPassword) {
+      valid = false;
+      this.createError(passwordInput, "As senhas devem ser iguais.");
+      this.createError(this.form.querySelector(".repetir-senha"), "As senhas devem ser iguais.");
+    }
+  
     return valid;
   }
+  
 
   isCpfValid(input) {
     const cpf = new ValidaCPF(input.value);
