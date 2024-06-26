@@ -1,41 +1,98 @@
+## JavaScript Studies
 
-# Repositório do Curso de JavaScript
-Bem-vindo ao repositório do curso abrangente de JavaScript! Este é um projeto em constante desenvolvimento, criado para aprimorar habilidades em JavaScript, desde os fundamentos até tópicos avançados e práticos.
+### Module 1 - Basics
+  * Let, var and const ✅
+  * Primitive data types ✅
+  * Array ✅
+  * Function ✅
+  * Alert, confirm and prompt ✅
 
-## Fundamentos
-Começamos explorando os fundamentos do JavaScript, destacando o uso de recursos nativos sem depender de frameworks ou bibliotecas adicionais. Este módulo abrange tanto o desenvolvimento no lado do servidor, utilizando o Node.js, quanto no lado do cliente, trabalhando diretamente nos navegadores.
+### Module 2 - Computer Thinking
+  * Logic operators ✅
+  * if, else and ternary operation ✅
+  * Date object ✅
+  * Switch/Case ✅
+  * For in, for of and classic for ✅
+  * While and Do While ✅
+  * Try, catch, Throw and Finally ✅
+  * setInterval and setTimeout ✅
 
-## Node.js, Frameworks e Bibliotecas
-Conceitos-chave como Node.js, Express, e MongoDB (noSQL) para desenvolvimento no lado do servidor. Além disso, apresento frameworks e bibliotecas padrão do mercado, como Express e Mongoose, enquanto exploramos detalhadamente o sistema de módulos do Node.js.
+### Module 3 - JavaScript Functions
+  * Function Parameters ✅
+  * Lexic Scope ✅
+  * Closures ✅
+  * Callback functions ✅
+  * IIFE ✅
+  * Factory Functions ✅
+  * Constructor Functions ✅
+  * Recursive Functions ✅
 
-## JS Tooling
-Ferramentas essenciais como Babel e Webpack, possibilitando o uso eficiente do sistema de módulos do ES6 em navegadores mais antigos que não oferecem suporte nativo.
+### Module 4 - JavaScript Arrays 
+  * Splice method✅
+  * Filter method ✅
+  * Map method ✅
+  * Reduce method ✅
+  * forEach method ✅
 
-## Projeto #1: CRUD e Sistema de Login
-Colocar em prática os conhecimentos adquiridos, desenvolvendo um projeto que envolve operações CRUD em uma base de dados MongoDB, incorporando um sistema de login com sessions e, posteriormente, com JSON Web Tokens (JWT).
+### Module 5 - Objects and Prototypes
+  * Object.defineProperty() and Object.defineProperties() ✅
+  * Setters and Getters ✅
+  * inheretance ✅
+  * Polymorphism ✅
 
-## Deploy (Linux)
-Tecnologias adicionais, incluindo a criação de um servidor web com NGINX para proxy reverso com Node, gerenciamento de projetos Node com pm2, configuração de servidores Linux no Google Cloud Platform (GCP), implementação gratuita de certificados SSL/TLS (HTTPS) com Let's Encrypt, configuração de repositórios Git, comandos Git avançados, configuração de chaves SSH no servidor e computador pessoal, TypeScript do básico ao avançado, entre outros.
+### Module 6 - Classes
+  * Getters and Setters ✅
+  * POO ✅
 
-## TypeScript
-Seção dedicada ao TypeScript, proporcionando a oportunidade de explorar essa linguagem em ascensão.
+### Module 7 - Asynchronous JavaScript ( on going )
+  * Promises
+  * Async / Await
+  * XMLHttpRequest
+  * Fetch API
+  * Fetch API + Axios
 
-## Segurança
-Ênfase à segurança em todos os serviços utilizados, permitindo que os participantes façam o deploy de suas aplicações com confiança.
+### Module 8 - JavaScript tooling and ES6 Modules
+ * Babel and "can i use..."
+ * Webpack (Boilerplate)
+ * ES6 Modules (import / export)
+ * core-js and regenerator-runtime
 
-## API Rest e React
-Construímos uma API Rest utilizando MariaDB/MySQL e Sequelize, abordando temas como editorconfig, eslint, prettier, JWT, middlewares, e mais. Na seção React, desde a básica até a avançada, implementamos um sistema de Login, Redux + Redux Saga, consumindo a API Rest previamente desenvolvida e realizando operações CRUD na base de dados MySQL/MariaDB.
+### Module 9 - JavaScript - Node, NPM, Express and MongoDB
+ * Modules
+ * NPM
+ * FS and Mutual recursion
+ * Express
+ * Express + Nodemon
+ * Express - req.params, req.query and req.body
+ * Express - Router and Controllers
+ * Express Views
+ * Express - Static files
+ * Express + Webpack
+ * Express Middlewares
+ * MongoDB
+ * Helmet and CSRF
 
-## Expressões Regulares e Princípios SOLID
-Criar expressões regulares personalizadas e explorarão os pilares da Programação Orientada a Objetos (POO) e os princípios SOLID, essenciais para qualquer programador.
+### Module 10 - Application Deploy and Security - SSH Keys
+ * Google Cloud Plataform
+ * SSH
+ * NGINX
 
-## Testes com o Jest e Design Patterns
-Testes automatizados com Jest, incluindo testes unitários e de integração. Uma seção inteira é dedicada aos padrões de projeto (Design Patterns), com foco nos padrões da Gang of Four (GoF).
+### Module 11 - REST API
+ * MySQL Workbench, Docker and Imnsonia
+ * Editorconfig
+ * Eslint
+ * Nodemon + Sucrase
+ * Sequelize
+ * JWT
 
-## NextJS + Strapi
-Blog utilizando NextJS + Strapi, explorando SSR, SSG, ISR, e abordando tópicos de infraestrutura, como deploy em servidor Linux (Ubuntu), PostgreSQL, e Continuous Deployment (CD) com Github Webhooks.
+### Module 12 and 13 - React
+ * Components
+ * Styled-Components
+ * React Router DOM
+ * Router and History
+ * Axios
+ * Redux + React
+ * Redux saga
+ * Redux persist
 
-## Bancos de Dados SQL (MySQL) e Knex - Query Builder
-Uma seção específica ensina a executar consultas comuns em bancos de dados SQL (MySQL). Além disso, detalhamos o uso do Knex, um Query Builder versátil que suporta várias bases de dados SQL.
-
-`Este repositório é uma compilação de material do curso, oferecendo um guia passo a passo para explorar o vasto mundo do JavaScript. Fique à vontade para explorar, fazer perguntas e contribuir. Boa codificação!`🚀
+...
