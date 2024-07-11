@@ -45,7 +45,7 @@
   * POO ✅
 
 ### Module 7 - Asynchronous JavaScript ( on going )
-  * Promises
+  * Promises ✅
   * Async / Await
   * XMLHttpRequest
   * Fetch API
