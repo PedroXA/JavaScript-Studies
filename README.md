@@ -46,7 +46,7 @@
 
 ### Module 7 - Asynchronous JavaScript ( on going )
   * Promises ✅
-  * Async / Await
+  * Async / Await ✅
   * XMLHttpRequest
   * Fetch API
   * Fetch API + Axios
