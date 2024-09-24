@@ -47,9 +47,9 @@
 ### Module 7 - Asynchronous JavaScript ( on going )
   * Promises ✅
   * Async / Await ✅
-  * XMLHttpRequest
-  * Fetch API
-  * Fetch API + Axios
+  * XMLHttpRequest ✅
+  * Fetch API ✅
+  * Fetch API + Axios ✅
 
 ### Module 8 - JavaScript tooling and ES6 Modules
  * Babel and "can i use..."
@@ -57,6 +57,7 @@
  * ES6 Modules (import / export)
  * core-js and regenerator-runtime
 
+(NOT STUDYING THIS ONE RIGHT NOW)
 ### Module 9 - JavaScript - Node, NPM, Express and MongoDB
  * Modules
  * NPM
@@ -71,12 +72,14 @@
  * Express Middlewares
  * MongoDB
  * Helmet and CSRF
-
+ * 
+(NOT STUDYING THIS ONE RIGHT NOW)
 ### Module 10 - Application Deploy and Security - SSH Keys
  * Google Cloud Plataform
  * SSH
  * NGINX
-
+ * 
+(NOT STUDYING THIS ONE RIGHT NOW)
 ### Module 11 - REST API
  * MySQL Workbench, Docker and Imnsonia
  * Editorconfig
