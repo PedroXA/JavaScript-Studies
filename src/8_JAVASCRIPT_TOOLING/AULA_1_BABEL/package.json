@@ -1,0 +1,17 @@
+{
+  "name": "javascript-studies",
+  "version": "1.0.0",
+  "description": "### Module 1 - Basics   * Let, var and const ✅   * Primitive data types ✅   * Array ✅   * Function ✅   * Alert, confirm and prompt ✅",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.26.4",
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0"
+  }
+}
