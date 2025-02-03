@@ -57,7 +57,6 @@
  * ES6 Modules (import / export)
  * core-js and regenerator-runtime
 
-(NOT STUDYING THIS ONE RIGHT NOW)
 ### Module 9 - JavaScript - Node, NPM, Express and MongoDB
  * Modules
  * NPM
