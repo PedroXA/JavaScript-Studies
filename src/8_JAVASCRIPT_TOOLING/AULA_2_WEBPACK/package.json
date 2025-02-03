@@ -1,0 +1,22 @@
+{
+  "name": "aula_2_webpack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@babel/cli": "^7.26.4",
+    "@babel/core": "^7.26.7",
+    "@babel/preset-env": "^7.26.7",
+    "babel-loader": "^9.2.1",
+    "core-js": "^2.6.12",
+    "regenerator-runtime": "^0.14.1",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1"
+  }
+}
